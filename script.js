@@ -1,3 +1,5 @@
+// person.js (or any file you are using)
+
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -20,8 +22,4 @@ class Employee extends Person {
     }
 }
 
-const person = new Person("Alice", 25);
-person.greet(); 
-
-const employee = new Employee("Bob", 30, "Manager");
-employee.jobGreet();
+module.exports = { Person, Employee }; // Exporting for use in tests
