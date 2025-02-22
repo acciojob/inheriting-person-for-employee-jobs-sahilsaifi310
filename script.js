@@ -20,8 +20,3 @@ class Employee extends Person {
     }
 }
 
-const person = new Person("Alice", 25);
-person.greet(); 
-
-const employee = new Employee("Bob", 30, "Manager");
-employee.jobGreet();
